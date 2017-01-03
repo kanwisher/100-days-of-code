@@ -30,16 +30,13 @@
 
 
 **Today's Progress**: Completed freecodecamp algorithm challenge "Return largest numbers in Arrays"
+Deleted Repo since contributions weren't showing on fork. Restarted as owner
 
 **Thoughts/Learned something new:**
 
    I was given a 2D array and asked to return the largest number in each array using a function. The exercise suggested I use comparison operators, but for my initial attempt I used a for loop that iterates through each array and sorts them from least to greatest using the sort() array method. The sort() method has to take a function to sort numbers, as it really only sorts strings by default. Then I used the pop() method to remove the last (largest) number in the now sorted array. I used the push() method to add it to a new array. I then returned the newArray. Since FCC runs multiple function argument tests, I realized that each time the function ran, my newArray would keep getting larger. I moved my var newArray = [] declaration from global scope to inside the function. Everytime the function runs, the newArray would be reset (emptied).
-   
-   
-   
 
-   
-
+ 
 
 **Link to work:** 
 https://www.freecodecamp.com/challenges/return-largest-numbers-in-arrays
