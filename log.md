@@ -61,3 +61,108 @@ function largestOfFour(arr) {
 
 largestOfFour([[13, 10000, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 
+
+### Day 3: January 2nd, 2017
+
+
+**Today's Progress**: 
+
+**Thoughts/Learned something new:**
+There is a Number() function that is similar (but different) to parseInt()
+
+
+ternary operator. If condition is true, middle thing is chosen, otherwise the last item is chosen
+console.log(CONDITION ? MIDDLETHING : LASTTHING);
+console.log(true ? 1 : 2);
+// → 1
+console.log(false ? 1 : 2);
+// → 2
+
+   
+
+**Link to work:** 
+
+for (i = 1; i <= 100; i++){
+	if(i % 15 === 0){
+  console.log("FizzBuzz");
+  } else if(i % 5 === 0){
+  console.log("Buzz");
+  } else if(i % 3 === 0){
+  console.log("Fizz");
+  } else{
+  console.log(i);
+  }
+}
+
+
+### Day 3: January 2nd, 2017
+
+
+**Today's Progress**:
+
+**Thoughts/Learned something new:**
+
+   
+
+**Link to work:** 
+
+
+### Day 3: January 2nd, 2017
+
+
+**Today's Progress**:
+
+**Thoughts/Learned something new:**
+
+   
+
+**Link to work:** 
+
+
+### Day 3: January 2nd, 2017
+
+
+**Today's Progress**:
+
+**Thoughts/Learned something new:**
+
+   
+
+**Link to work:** 
+
+
+### Day 3: January 2nd, 2017
+
+
+**Today's Progress**:
+
+**Thoughts/Learned something new:**
+
+   
+
+**Link to work:** 
+
+
+### Day 3: January 2nd, 2017
+
+
+**Today's Progress**:
+
+**Thoughts/Learned something new:**
+
+   
+
+**Link to work:** 
+
+
+### Day 3: January 2nd, 2017
+
+
+**Today's Progress**:
+
+**Thoughts/Learned something new:**
+
+   
+
+**Link to work:** 
+
