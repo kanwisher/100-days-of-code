@@ -62,7 +62,7 @@ function largestOfFour(arr) {
 largestOfFour([[13, 10000, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 
 
-### Day 3: January 2nd, 2017
+### Day 3: January 3rd, 2017
 
 
 **Today's Progress**: Completed a FizzBuzz challenge and ready 2 chapters of Eloquent Javascript
@@ -95,16 +95,28 @@ for (i = 1; i <= 100; i++){
 }
 
 
-### Day 3: January 2nd, 2017
+### Day 4: January 4th, 2017
 
 
-**Today's Progress**:
+**Today's Progress**: Worked on a CSS/Javascript clock
 
 **Thoughts/Learned something new:**
+Used some ECMA6 techniques again: const and backtick string stuff: `${variable}`
+(CSS) transform: rotate(180deg);
+(CSS) transition
+(CSS) transition-timing-function
+(CSS) transform-origin: defaults to start animation at 50%, had to change it to 100% (far right)
+(JS) document.querySelector(".class"); [review]
+(JS) Variety of Date() object
+var now = new Date(); //constructor
+var seconds = now.getSeconds(); //call method of date object to get the current time in seconds
+
 
    
 
 **Link to work:** 
+
+See Day 2 JS + CSS Clock
 
 
 ### Day 3: January 2nd, 2017
