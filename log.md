@@ -65,7 +65,7 @@ largestOfFour([[13, 10000, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001,
 ### Day 3: January 2nd, 2017
 
 
-**Today's Progress**: 
+**Today's Progress**: Completed a FizzBuzz challenge and ready 2 chapters of Eloquent Javascript
 
 **Thoughts/Learned something new:**
 There is a Number() function that is similar (but different) to parseInt()
