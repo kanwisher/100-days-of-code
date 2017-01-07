@@ -119,16 +119,38 @@ var seconds = now.getSeconds(); //call method of date object to get the current 
 See Day 2 JS + CSS Clock
 
 
-### Day 3: January 2nd, 2017
+### Day 5: January 5th, 2017 SNOWDAY!!!
 
 
-**Today's Progress**:
+**Today's Progress**: Completed another FizzBuzz exercise and a solution to a checkerboard algorithm. Read Chapter 3 of Eloquent Javascript
 
 **Thoughts/Learned something new:**
 
    
 
-**Link to work:** 
+**Link to work:**
+Checkerboard solution
+
+finString = "";
+space = " ";
+hash = "#";
+size = 8;
+newLine = "\n";
+
+for(j = 0; j < size; j++){
+
+    for(i = 0; i < size; i++){
+        if(i % 2 === 0){
+            finString += space;
+        }else{
+            finString += hash;
+        }
+       
+	}
+ finString += newLine;
+}
+console.log(finString);
+    
 
 
 ### Day 3: January 2nd, 2017
