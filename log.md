@@ -153,16 +153,18 @@ console.log(finString);
     
 
 
-### Day 3: January 2nd, 2017
+### Day 6: January 6th, 2017 SNOW DAY!!
 
 
-**Today's Progress**:
+**Today's Progress**: Completed a nested scope example and shared it will the class. Created a very basic "Yoda Speak" API call using Jquery/Ajax
 
 **Thoughts/Learned something new:**
-
+I spent who knows how long trying to figure out why my API calls weren't working only to find that the server was down, you never know!
+I'm really taking some time to learn closure and recursion, I'll of course need to return to these topics.
    
 
 **Link to work:** 
+See Day 6 folder
 
 
 ### Day 3: January 2nd, 2017
