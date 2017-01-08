@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title> Yoda Speakr</title>
+	</head>
+	<body>
+	<div class"container">
+	<h1>Yoda Speak</h1>
+
+	<div id="YodaSpeak"></div>
+	</div>
+	</div>
+
+
+<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+<script type="text/javascript">
+
+	var askName = prompt("Give me a sentence for Yoda to read");
+	var queryURL = 'https://yoda.p.mashape.com/yoda?sentence=' + askName;
+	
+$.ajax ({
+	
+
+
+			url: queryURL,
+            method: 'GET',
+            headers: {'X-Mashape-Key': 'yPAxqOpyrbmshi4OYIvQyd78cjlXp1tosSojsnM8no83tQbKco'}
+
+})
+
+.done(function(response) {
+	
+	$("#YodaSpeak").html(response);
+
+
+
+});
+
+</script>
+	</body>
+	</html>
