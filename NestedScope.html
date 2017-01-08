@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nested Scope</title>
+</head>
+
+
+
+<h1> view Console </h1>
+
+<script>
+
+var wholeFunction = function() {
+  
+  
+  var result = ""; // local function (build here)
+  
+  
+  var plusSign = function(size) { //nested function
+    for(i = 0; i < size; i ++){  
+      result += "+";
+     }
+  };
+  
+  
+  var createASpace = function () {
+    result += "\n"; // \n is simply a line break, it's like hitting the enter key in console
+  };
+  
+  plusSign(1);
+  createASpace();
+  plusSign(2);
+  createASpace();
+  plusSign(3);
+  createASpace();
+  plusSign(4);
+  return result;
+
+};
+console.log(wholeFunction());
+
+//Javascript nested scope example//
+//Try to guess what output will come from this example//
+
+
+
+
+//Don't understand? Doesn't matter. I wrote out a killer description that will help you fill in the knowledge gaps//
+
+
+
+
+
+
+/*
+ Here's what happens:
+
+From top to bottom we have some function expressions that are here.  (http://www.w3schools.com/js/js_function_definition.asp)
+But they won't run until they are called!! (http://www.w3schools.com/js/js_function_invocation.asp)
+So we skip past wholeFunction() and its contents, because our functions haven't been called.
+Our functions are just like doors that are locked, they can only be unlocked by saying the magic word!
+
+This brings us to console.log(wholeFunction());
+Wait a second, typing "wholeFunction() is calling our function, it's our magic word!
+This function call is like saying "hey, jump back up and start at var wholeFunction = function() { and show me the world that's inside your curly braces" OPEN UP!
+
+Inside our wholefunction() function we assign a variable called result and we tell it to be an empty string "". Then we have 2 function expressions in a row!
+But we can't open them yet. Why not?
+Because we haven't called our magic words! So we skip past them, 1 at a time, ignoring the contents because afterall- they are locked doors!
+oooh...this brings us to plusSign(1); This is a magic word, and it tells us to jump up to our locked door and see what's inside.
+But what is this number 1 for?
+The number 1 takes the place of our word "size", and everytime "size" appears. (http://www.w3schools.com/js/js_function_parameters.asp)
+
+so var plusSign = function(size) {
+      for(i=0; i < size; i++){
+         result += "+";
+      }
+      
+      becomes....
+      
+      var plusSign = function(1) {
+      for(i=0; i < 1; i++){
+         result += "+";
+      }
+      
+
+We run our "for loop" and it says "yo, make the letter i the same thing as the number 0 (http://www.w3schools.com/js/js_loop_for.asp)
+then give it a test: is i(which is 0) less than 1
+Well the rule says if the test passes, then we go to the contents of our loop
+The contents say: take our variable named "result" (which is equal to an empty string) and throw a plus sign in there for me please
+result += "+" is the same as
+result = result + "+" is the same as
+result = "" + "+" is the same as
+result = "+"
+
+wait a second, adding the plus sign is making that sound more confusing than it really is, let me give another example [unrelated to this exercise]:
+var result = "chocolate"
+result += "milkshake" is the same as
+result = result + "milkshake" is the same as
+result = "chocolate" + "milkshake" is the same as
+result = "chocolatemilkshake" (we didn't add a space, so our strings just concatenate) (http://www.w3schools.com/js/js_operators.asp);
+
+
+Where were we?
+So our loop runs once, our result variable gets a "+" string added to it
+then the "i++" kicks in and says, yo - I'm sick of you being 0, add 1 to yourself and become 1! (http://www.w3schools.com/js/js_operators.asp)
+So i listens, and now i isn't equal to 0, i is equal to 1;
+but we need to run our test again (it's a loop after all!)
+The test says: is i(which is now 1) less than 1
+Well no, 1 is not less than 1, 1 is equal to 1
+so our test fails, and we say "enough of this loop stuff, let's move on"
+Well we stick to our top to bottom trend, we skip past our locked door var createASpace(), because we still haven't unlocked it and we shoot back over to where we started with our magic word
+We started at plusSign(1), so we'll shoot back over to it again, but we've been there done that, so moving top/down we hit up our next magic word
+This magic word says createASpace(); it doesn't have any parameters in it's parenthesis, but we still are calling its function the same as our last function
+So we shoot up to our locked door and say "show me what you got inside of you" Mr. CreateASpace function
+and it says: "here are my contents": take your variable named result and add a line break to it, almost like pressing the enter key
+but Wait!!! Before we add our line break, what are the contents of result?
+If you said, "" (an empty string) you're wrong, don't you remember that we added a "+" sign to it?
+So we take our variable result and we add a line break.
+now we have:
+Result = "+\n"
+
+which is the same as
+"+"
+IMAGINE AN EMPTY LINE BELOW IT AND WE CAN NO LONGER PUT STUFF NEXT TO "+" up there anymore, but we CAN start typing on this line. (uh, this doesn't make sense, but you'll see)
+
+
+This is getting boring isn't it?
+So we finish running that function and we shoot back over to where we started
+then move down to the function right below it. You know what to do, run through the steps in the problem!
+What did this generate?
+var result = "+\n++" which is the same as
++
+++
+(are we building a ramp like structure??!??!)
+So you're an expert on functions and parameters now, so let's pretend you run through the rest of the functions:
+
+  plusSign(2);
+  createASpace();
+  plusSign(3);
+  createASpace();
+  plusSign(4);
+  
+  What is result now?
+
+Result= "+\n++\n+++\n++++" which is the same as
+
++
+++
++++
+++++
+
+All finished right?!?! Well no. This "result" variable is a secret hidden behind a locked door ( our wholeFunction() ), we can only see it now because we're inside the locked door for the moment, but what happens when we leave our function?
+"but David, why would I leave the function? it's comfortable in here, I like it"
+You always have left the functions when you got to the end of the function, remember plusSign and createASpace? Its time to leave the big parent function as its contents are coming to an end!
+
+Take some time to think about this part
+If we were to be outside of our locked door (all the way outside our function) and say something like console.log(result) our console would say "what the hell are you talking about?!?"
+"because if you're trying to reference something inside one of those locked doors, I can't see that shit, those doors don't have a window!"
+It's like the contents inside of those functions are invisible
+
+Our result variable will exist inside our function, it will even exist as we want it, with the contents of ("+\n++\n+++\n++++") BUT, we can't access it....if we're outside of the function
+
+
+I know! we can "return" our result so it's the last thing our function does (or outputs), our function will do all the work for us and then give us the only thing we want: the solution!
+Using "return" is like going inside our locked door to get something, then leaving the locked door with the thing we went in to get. All the other crap can stay in there, we just want our "RESULT"
+
+If return gives us the contents of our results variable, then now we have come full circle
+Where did we start, do you remember? What was the first function we ran?
+
+I know! We said console.log(wholeFunction());
+but wait, we don't want to jump through those function hoops again, we already did, and we returned the result
+
+what console.log(wholefunction()) is  really saying is  console.log(you came into my magical word, and inside my locked doors I returned the contents of the results variable that you built up which is now ""+\n++\n+++\n++++");
+Another way of saying: console.log("+\n++\n+++\n++++")
+otherwise saying
+
++
+++
++++
+++++ 
+(in your console)
+
+Fin.
+
+*/
+</script>
+</body>
+</html>
