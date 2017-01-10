@@ -170,39 +170,47 @@ See Day 6 folder
 ### Day 3: January 7th, 2017
 
 
-**Today's Progress**:
+**Today's Progress**: Reviewed some Javascript and jQuery on codeacademy and teamtreehouse. Looked over some items on LinkedIn to see what is out there. Felt a little under the weather, but tried to get some work done.
 
 **Thoughts/Learned something new:**
-
+I'm realizing that only coding multiple projects is going to help me remember/recall the major syntax items I'll be using in my career. Everything else I can look up when needed. Sublime snippets help.
    
 
-**Link to work:** 
+**Link to work:** none
 
 
 ### Day 3: January 8th, 2017
 
 
-**Today's Progress**:
+**Today's Progress**: Built a basic plan for my Trivia Game (Simpsons themed), coded out a framework. Reviewed Jon Duckett Javascript/Jquery
 
 **Thoughts/Learned something new:**
+Really felt like I helped build on some of the jQuery and Javascript items I was having trouble recalling after reviewing the Duckett book. I placed some markets on some key pages that have some good resources.
 
    
 
-**Link to work:** 
+**Link to work:**  None posted
 
 
 ### Day 3: January 9th, 2017
 
 
-**Today's Progress**:
+**Today's Progress**: Scrapped yesterday's work. Completed a Trivia Game assignment from start to finish.
 
 **Thoughts/Learned something new:**
-
-   
+Used lots of jQuery
+Implemented an Array of Objects
+Used object constructors
+Used different javascript timers
+Used a CSS animation
+I will want to look over this project again to try to optimize it. I'm not sure my object calls are more efficient.
+Ordered The Little Schemer, I read that it's good for conceptually understanding programming recursion
+Threw in a jQuery UI starter animation
 
 **Link to work:** 
+see folder Trivia Game
 
-### Day 3: January 9th, 2017
+### Day 3: January 10th, 2017
 
 
 **Today's Progress**:
