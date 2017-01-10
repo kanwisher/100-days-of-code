@@ -167,7 +167,7 @@ I'm really taking some time to learn closure and recursion, I'll of course need 
 See Day 6 folder
 
 
-### Day 3: January 2nd, 2017
+### Day 3: January 7th, 2017
 
 
 **Today's Progress**:
@@ -179,7 +179,7 @@ See Day 6 folder
 **Link to work:** 
 
 
-### Day 3: January 2nd, 2017
+### Day 3: January 8th, 2017
 
 
 **Today's Progress**:
@@ -191,7 +191,56 @@ See Day 6 folder
 **Link to work:** 
 
 
-### Day 3: January 2nd, 2017
+### Day 3: January 9th, 2017
+
+
+**Today's Progress**:
+
+**Thoughts/Learned something new:**
+
+   
+
+**Link to work:** 
+
+### Day 3: January 9th, 2017
+
+
+**Today's Progress**:
+
+**Thoughts/Learned something new:**
+
+   
+
+**Link to work:** 
+
+
+### Day 3: January 9th, 2017
+
+
+**Today's Progress**:
+
+**Thoughts/Learned something new:**
+
+   
+
+**Link to work:** 
+
+
+
+### Day 3: January 9th, 2017
+
+
+**Today's Progress**:
+
+**Thoughts/Learned something new:**
+
+   
+
+**Link to work:** 
+
+
+
+### Day 3: January 9th, 2017
 
 
 **Today's Progress**:
