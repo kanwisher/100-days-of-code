@@ -213,34 +213,45 @@ see folder Trivia Game
 ### Day 3: January 10th, 2017
 
 
-**Today's Progress**:
+**Today's Progress**: stuck in the driveway yesterday and missed class, I made up my class today after work. We built most of our New York Times API's app in a group project
 
 **Thoughts/Learned something new:**
+Felt pretty comfortable on the backend with the AJAX calls
+Would like to review Bootstrap seeing how fast a team member put the front-end site together!
 
    
 
-**Link to work:** 
+**Link to work:** Should be a forked repository about a New York Times App
 
 
-### Day 3: January 9th, 2017
+### Day 3: January 11th, 2017
 
 
-**Today's Progress**:
-
-**Thoughts/Learned something new:**
-
-   
-
-**Link to work:** 
-
-
-
-### Day 3: January 9th, 2017
-
-
-**Today's Progress**:
+**Today's Progress**: Learned about localStorage, sessionStorage, cookies
 
 **Thoughts/Learned something new:**
+Had a pretty difficult class exercise that we worked on in groups at the end of class using localStorage.
+I enjoyed the challenge. We were close to the solution, but did not finish. I want to try to complete this challenge soon.   
+
+**Link to work:** Not pushed to GitHub yet.
+
+
+
+### Day 3: January 12th, 2017
+
+
+**Today's Progress**: Restructuring a new study plan to try to loosely stick to. It's an 8 hour outline that I will not always be able to complete, but it's designed to keep me building and learning on a regular schedule.
+
+**Thoughts/Learned something new:**
+Refreshed my memory on:
+document.getElementByID;
+addEventListener
+Seems that using jQuery for a while can mess my JavaScript memory up
+Completed 2 algorithms, and offered to help someone online without a response from them,
+Reviewed some basic loop structures on CodeAcademy, and then began a small project in JSBin
+
+
+
 
    
 
