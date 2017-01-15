@@ -22,6 +22,25 @@
 
   <style>
 
+      :root {
+      --base: #ffc600;
+      --spacing: 10px;
+      --blur: 10px;
+
+      /* sets variables base spacing and blur to mean those attributes */
+    }
+
+    img {
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
+
+    /* references the above variables */
+
+    .hl {
+      color: var(--base);
+    }
     /*
       misc styles, nothing to do with CSS variables
     */
@@ -48,6 +67,25 @@
   </style>
 
   <script>
+  const inputs = document.querySelectorAll('.controls input');
+
+  function handleUpdate() {
+    const suffix = this.dataset.sizing || "";
+
+    //if this.dataset.sizing doesn't exist then use the other;
+    //
+
+    document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+  }
+
+  inputs.forEach(input => input.addEventListener('change', handleUpdate));
+  inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+
+  //grabs each DOM array through iteration by forEach. 
+  //#spacing then #blur then #base will plug themselves into the input argument. Then it will listen for any change to the input. then upon a change it will run the handleUpdate function. which just displays the value. The mousemove returns value for ANY movement over the input, even if the slider isn't moving//
+
+
+  
   </script>
 
 </body>
