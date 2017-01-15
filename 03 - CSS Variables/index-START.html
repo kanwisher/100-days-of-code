@@ -76,6 +76,9 @@
     //
 
     document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+
+    //Document.documentElement Read only
+//Returns the Element that is a direct child of the document. For HTML documents, this is normally the <html> element.
   }
 
   inputs.forEach(input => input.addEventListener('change', handleUpdate));
