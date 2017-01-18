@@ -164,10 +164,10 @@ I'm really taking some time to learn closure and recursion, I'll of course need 
    
 
 **Link to work:** 
-See Day 6 folder
+See repo yodaspeak
 
 
-### Day 3: January 7th, 2017
+### Day 7: January 7th, 2017
 
 
 **Today's Progress**: Reviewed some Javascript and jQuery on codeacademy and teamtreehouse. Looked over some items on LinkedIn to see what is out there. Felt a little under the weather, but tried to get some work done.
@@ -179,7 +179,7 @@ I'm realizing that only coding multiple projects is going to help me remember/re
 **Link to work:** none
 
 
-### Day 3: January 8th, 2017
+### Day 8: January 8th, 2017
 
 
 **Today's Progress**: Built a basic plan for my Trivia Game (Simpsons themed), coded out a framework. Reviewed Jon Duckett Javascript/Jquery
@@ -192,7 +192,7 @@ Really felt like I helped build on some of the jQuery and Javascript items I was
 **Link to work:**  None posted
 
 
-### Day 3: January 9th, 2017
+### Day 9: January 9th, 2017
 
 
 **Today's Progress**: Scrapped yesterday's work. Completed a Trivia Game assignment from start to finish.
@@ -210,7 +210,7 @@ Threw in a jQuery UI starter animation
 **Link to work:** 
 see folder Trivia Game
 
-### Day 3: January 10th, 2017
+### Day 10: January 10th, 2017
 
 
 **Today's Progress**: stuck in the driveway yesterday and missed class, I made up my class today after work. We built most of our New York Times API's app in a group project
@@ -224,7 +224,7 @@ Would like to review Bootstrap seeing how fast a team member put the front-end s
 **Link to work:** Should be a forked repository about a New York Times App
 
 
-### Day 3: January 11th, 2017
+### Day 11: January 11th, 2017
 
 
 **Today's Progress**: Learned about localStorage, sessionStorage, cookies
@@ -237,7 +237,7 @@ I enjoyed the challenge. We were close to the solution, but did not finish. I wa
 
 
 
-### Day 3: January 12th, 2017
+### Day 12: January 12th, 2017
 
 
 **Today's Progress**: Restructuring a new study plan to try to loosely stick to. It's an 8 hour outline that I will not always be able to complete, but it's designed to keep me building and learning on a regular schedule.
@@ -250,23 +250,255 @@ Seems that using jQuery for a while can mess my JavaScript memory up
 Completed 2 algorithms, and offered to help someone online without a response from them,
 Reviewed some basic loop structures on CodeAcademy, and then began a small project in JSBin
 
-
-
-
-   
-
 **Link to work:** 
 
+function confirmEnding(str, target) {
+  
+  var lastLetter = str.substring(str.length - target.length);
+  if(target === lastLetter){
+    return true;
+  } else{
+    return false;
+  }
+}
+
+confirmEnding("Bastian", "n");
+
+//
+
+function repeatStringNumTimes(str, num) {
+    var holdvar = "";
+    for(i = 0; i < num; i++){
+    
+    holdvar += str;
+    }
+    return holdvar;
+}
+
+repeatStringNumTimes("abc", 3);
 
 
-### Day 3: January 9th, 2017
+
+### Day 13: January 13th, 2017 Day 0 of flu!
 
 
 **Today's Progress**:
 
-**Thoughts/Learned something new:**
+code academy, messing around in JSBin. Created a basic dragon attack text based game based on random chance.
 
+**Thoughts/Learned something new:**
+Problem solving practice
+Review of do while loops
    
 
 **Link to work:** 
 
+function truncateString(str, num) {
+  // Clear out that junk in your trunk
+  if(num >= str.length){
+    return str;
+  }else if (num <= 3){
+    str = str.slice(0, num) + "...";
+  return str;
+  }else {
+    str = str.slice(0, num -3) + "...";
+    return str;
+  }
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", 11);
+//
+
+function chunkArrayInGroups(arr, size) {
+  // Break it up.
+    var arr2 = [];
+    var i = 0;
+      while(i < arr.length){
+      var sliced = arr.slice(i, i + size);  
+      arr2.push(sliced);
+      i += size;
+      }
+
+    return arr2;
+
+}
+
+chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3);
+
+### Day 14: January 14th, 2017 Day 1 of flu!
+
+
+**Today's Progress**: 
+Solved 2 algorithms. Code academy, messed about in JSBin again. Did Khan academy. 
+
+**Thoughts/Learned something new:**
+Created different things in Firebase. Firebase allows me to access a server side database to update information live on the page without refresh, multiple people accessing the page can change the results.
+
+**Link to work:** 
+
+function slasher(arr, howMany) {
+  return arr.slice(howMany);
+
+}
+
+slasher([1, 2, 3], 2);
+//
+
+function mutation(arr) {
+  var firstWord = arr[0].toLowerCase();
+  var secondWord = arr[1].toLowerCase();
+ 
+
+  
+  for(i = 0; i < secondWord.length; i++){
+    if (firstWord.indexOf(secondWord[i]) === -1){
+      return false;
+    } 
+    
+  }
+  return true;
+}
+ 
+
+mutation(["hello", "hey"]);
+
+
+
+### Day 15: January 15th, 2017 Day 2 of flu!
+
+**Today's Progress**:
+Code Academy JS, messed about in JSbin some. Did day 4 of JS30. Created a slider toggle for 3 different settings to alter the CSS properties of an image.
+
+**Thoughts/Learned something new:**
+CSS variables!??!
+Arrow function review
+
+**Link to work:** 
+
+see JS30 repo
+
+
+### Day 16: January 16th, 2017 Day 3 of flu!
+
+
+**Today's Progress**:
+Completed giphy api search homework from start to finish
+
+**Thoughts/Learned something new:**
+reviewed Ajax calls using jquery
+used figure and figcaption HTML
+reviewed bootstrap classes
+used some fontawesome icons
+took a while to find a bug...missing a colon!
+
+**Link to work:** 
+see repo GiphyApp
+
+
+
+
+### Day 17: January 17th, 2017 Day 4 of flu!
+
+
+**Today's Progress**:
+Worked on my RPG game during a extra help day. Figured out the basic logic required to complete the game
+
+**Thoughts/Learned something new:**
+calling scoped items through window["object"].key
+Putting objects within an object to keep them outside of global scope (global scope is bad practice!);
+
+**Link to work:** 
+
+
+var characters = {
+
+	 batman: new Character("Batman", "batman"),
+	 superman: new Character("Superman", "superman"),
+	 joker: new Character("Joker", "joker"),
+	 lexLuthor: new Character("Lex Luthor", "lexLuthor")
+
+ 
+}
+
+
+
+### Day 18: January 18th, 2017 Day 5 of flu!
+
+
+**Today's Progress**:
+
+
+**Thoughts/Learned something new:**
+
+
+**Link to work:** 
+
+
+
+
+### Day 19: January 19th, 2017
+
+
+**Today's Progress**:
+
+
+**Thoughts/Learned something new:**
+
+
+**Link to work:** 
+
+
+
+
+
+### Day 20: January 20th, 2017
+
+
+**Today's Progress**:
+
+
+**Thoughts/Learned something new:**
+
+
+**Link to work:** 
+
+
+
+### Day 21: January 21st, 2017
+
+
+**Today's Progress**:
+
+
+**Thoughts/Learned something new:**
+
+
+**Link to work:** 
+
+
+
+
+### Day 22: January 22nd, 2017
+
+
+**Today's Progress**:
+
+
+**Thoughts/Learned something new:**
+
+
+**Link to work:** 
+
+
+
+
+### Day 23: January 23rd, 2017
+
+
+**Today's Progress**:
+
+
+**Thoughts/Learned something new:**
+
+
+**Link to work:** 
