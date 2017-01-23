@@ -426,28 +426,28 @@ var characters = {
 
 
 **Today's Progress**:
-
+Worked in groups for New York Times app and built an employee tracker in teams
 
 **Thoughts/Learned something new:**
-
+More exposure to firebase database and practice using Bootstrap
 
 **Link to work:** 
 
-
+employee tracker commits with forks
 
 
 ### Day 19: January 19th, 2017
 
 
 **Today's Progress**:
-
+Worked on adding objects to hangman game, still did not turn the game into a complete object.
 
 **Thoughts/Learned something new:**
-
+Using this and keys to access different variables. Keeps them out of global scope
 
 **Link to work:** 
 
-
+Hangman commits
 
 
 
@@ -455,27 +455,27 @@ var characters = {
 
 
 **Today's Progress**:
-
+Participated  in a coding Hackathon zoom meeting. Our team created a slack bot.
 
 **Thoughts/Learned something new:**
-
+Saw some different uses of API creation, my first real intro to Node.JS. Got to work with some great people.
 
 **Link to work:** 
-
+Forked 8-ball slack bot
 
 
 ### Day 21: January 21st, 2017
 
 
-**Today's Progress**:
+**Today's Progress**: First day of 1st project groups. Reading over Eloquent Javascript and Javascript the good parts, reviewing previous work from Bootcamp. Submitted resume to Anita Smalls (needs work)
 
 
 **Thoughts/Learned something new:**
-
+var that = this
 
 **Link to work:** 
 
-
+Just some fiddles today
 
 
 ### Day 22: January 22nd, 2017
