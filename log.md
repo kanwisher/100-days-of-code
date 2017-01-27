@@ -502,3 +502,77 @@ Just some fiddles today
 
 
 **Link to work:** 
+
+
+
+
+### Day 23: January 23rd, 2017
+
+
+**Today's Progress**:
+
+
+**Thoughts/Learned something new:**
+
+
+**Link to work:** 
+
+
+
+
+
+### Day 23: January 23rd, 2017
+
+
+**Today's Progress**:
+
+
+**Thoughts/Learned something new:**
+
+
+**Link to work:** 
+
+
+
+
+
+### Day 23: January 23rd, 2017
+
+
+**Today's Progress**:
+
+
+**Thoughts/Learned something new:**
+
+
+**Link to work:** 
+
+
+
+
+
+### Day 23: January 23rd, 2017
+
+
+**Today's Progress**:
+
+
+**Thoughts/Learned something new:**
+
+
+**Link to work:** 
+
+
+
+
+
+### Day 26: January 26th, 2017
+
+
+**Today's Progress**:
+
+Reviewed past class exercises, reviewed this and how this behaves in Javascript closures
+**Thoughts/Learned something new:**
+
+
+**Link to work:** 
