@@ -148,6 +148,8 @@ for(j = 0; j < size; j++){
        
 	}
  finString += newLine;
+ if(j % 2 === 0){
+    finString += space;
 }
 console.log(finString);
     
