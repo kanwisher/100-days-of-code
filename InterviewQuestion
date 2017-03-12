@@ -1,0 +1,75 @@
+//PROMPT
+
+//Time limit 40 minutes
+
+// How many groups of 3 could sit on a  plane TOGETHER without being split between an aisle or row?
+
+// The plane has "n" number of rows. Each row has a seating layout of XXX XXXX XXXX
+
+// You are given the number of rows and a string similar to "A2 B2 C1 D8 K1" where the letter
+// denotes the seat position, and the number denotes the row number
+
+// How many groups of 3 could sit on a plane TOGETHER without being split between an aisle or row?
+
+
+
+
+
+
+var plane = {}; //create a plane object
+
+
+
+//FUNCTION TO CREATE INITIAL NUMBER OF ROWS
+
+
+function rowsOnPlane(nRows){   
+  for(var i = 1; i <= nRows; i++){       
+      plane[i] = "ABC DEFG HIJK"; 
+  } 
+  console.log("empty plane:");
+  console.log(plane); //plane when empty
+}
+
+
+//FUNCTION TO SEAT PASSENGERS
+
+    
+function takeSeats(arg){
+  
+  argArray = arg.split(" ");
+  
+   argArray.forEach(function(item){
+      var currentRow = plane[item[1]]
+      plane[item[1]] = currentRow.replace(item[0], "*"); //replace the row with a taken seat
+   });
+ console.log("seats taken");
+ console.log(plane); //plane with taken seats  
+} 
+
+
+//FUNCTION TO COUNT AVAILABLE SEATS for parties of 3
+function seatsAvailable() {
+  let seats = 0;
+    for (prop in plane){
+      seats += (plane[prop].match(/[A-K]{3}/g).length);
+    }
+  console.log("You can seat a group of three people (without splitting them up across aisles or rows) " + seats + " times on this plane");
+}
+
+
+
+function findSolution(numSeats, seatsTaken){
+  plane = {};
+  rowsOnPlane(numSeats);
+  takeSeats(seatsTaken);
+  seatsAvailable();
+}
+
+
+findSolution(5, "A1 B1 C1 D2 C5 E3");
+
+
+  
+  
+  
